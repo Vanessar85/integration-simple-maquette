@@ -1,0 +1,299 @@
+// body page entière avec couleur de fond et marge
+ul{
+    list-style-type: none;
+}
+#body{
+    margin: 0;
+    width: 100%;
+    
+    @media (max-width: 375px) {
+    flex-direction: column;
+    height: auto;   
+    }
+   
+    background-color: white; 
+    // header (parent)
+    header{
+        width: 100%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        @media (max-width: 375px) {
+        flex-direction: column;
+        height: auto;
+        }
+
+       h1{
+        text-transform: uppercase;
+        width: 15%;
+
+      a{
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+      }
+       }
+
+       nav{
+        width: 75%; 
+         
+        // enfant
+        ul{
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            padding-left: 0%;
+            li{
+                text-transform: uppercase;
+                a{
+                    color: black;
+                    font-family: 'Roboto', sans-serif;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        #signin{
+            @media (max-width: 375px) {
+            height: auto;
+            }
+
+            a{
+                background-color: aqua;
+                border-radius: 20px;
+                padding: 2% 4% 2% 4%;
+                color: white;
+            }
+
+            text-decoration: dotted;
+        }
+
+       }
+    }
+    // main
+    main{
+        font-family: 'Roboto', sans-serif;
+
+        // section hero
+        #hero{
+            height: 70vh;
+            background-image: url('./images/hero.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            @media (max-width: 375px) {
+            height: auto;
+            }
+            
+            #conthero{
+
+                width: 60%;
+                display: flex;
+                margin: auto;
+                justify-content: center;
+                margin-bottom: 1%;
+                @media (max-width: 375px) {
+                height: auto;
+                }
+                
+                h2{
+                   color: white;
+                   text-align: center;
+                                   
+                }
+
+                p{
+                    color: white;
+                    text-align: center;
+                                                                       
+                }
+            }
+            
+        }
+        // section about
+        #about{
+           
+           
+            #contabout{
+                width: 60%;
+                display: flex;
+                margin: auto;
+                flex-direction: column;
+                @media (max-width: 375px) {
+                    height: auto;
+                    flex-direction: column;
+                    }
+          
+            h2{
+                text-align: center;
+                color: aqua;
+            }
+
+            p{
+                text-align: center;
+            }
+        }
+        }
+        // section team
+        #team{
+            
+            background-color: aqua;
+            padding-top: 2%;
+            padding-bottom: 2%;
+
+            h2{
+                color: white;
+                text-align: center;
+            }
+
+
+            #contteam{
+                
+                width: 50%;
+                display: flex;
+                margin: auto;
+                justify-content: center;
+                justify-content: space-between;
+                color: white;
+                padding-top: 3%;
+                padding-bottom: 3%;
+                @media (max-width: 375px) {
+                flex-direction: column;
+                }
+               
+            article{
+                text-align: center;
+                p{
+                  font-style: italic;
+                  text-align: center;
+                }
+            }
+                }
+                ul{
+                    padding-left: 0%;
+                    li{
+                        list-style-type: none;
+                        text-align: center;
+                        color: white;
+                    }
+                    }
+        }
+        
+        #map{
+            img{
+                width: 100%;
+            }
+            
+            display: flex;
+            @media (max-width: 375px) {
+            flex-direction: column;
+            height: auto;
+            }
+
+        }
+
+        }
+        
+
+    // footer
+
+    footer{
+
+        background-color: black;
+        width: 100%;
+            
+
+        #blocfoo{
+            width: 100%;
+            background-color: black;
+            display: flex;
+            padding-top: 1%;
+            margin: auto;
+            justify-content: space-between;
+            font-family: 'Roboto';
+            color: white;
+            text-decoration: none;
+            @media (max-width: 375px) {
+            flex-direction: column;
+            
+            #listedroite{
+                width: 60%;
+                padding-bottom: 4%;
+
+            }
+            }
+           
+            #listegauche{
+                
+                padding-left: 0%;
+                width: 70%;   
+                padding-bottom: 4%;  
+                padding-top: 4%;         
+                justify-content: space-between;
+                display: flex;
+                margin: auto;
+
+                li{
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+                
+                    }
+            }
+            #listedroite{
+            
+                width: 30%;
+                padding-left: 0%;
+                margin: auto;
+                justify-content: space-between;
+                display: flex;
+                border-radius: 10%;
+
+                li{
+                    
+                border: solid 1px white;
+                border-radius: 50px;
+                padding: 2%;
+
+                i{
+                    color: white;
+                    line-height: 13px;
+                    padding: 1em;
+                }
+
+                    }
+                    
+                }
+                
+            }
+           
+            
+
+           #ligneseparation{
+
+            width: 60%;
+            
+           }
+
+            #conditionsparticulieres{
+
+                display: flex;
+                margin-left: 40%;
+                width: 35%;
+                font-family: 'Roboto';
+                color: white;
+                text-align: center;
+                justify-content: space-between;
+                @media (max-width: 375px) {
+                flex-direction: column;
+                height: auto;
+                margin: auto;
+                }
+
+                 }   
+                       
+                }
